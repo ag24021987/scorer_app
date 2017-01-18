@@ -9,4 +9,6 @@
     <dimen name="end_reset_margin">10dp</dimen>
     <dimen name="straight_line_width">1dp</dimen>
     <dimen name="straight_line_height">400dp</dimen>
+    <dimen name="button_height">0dp</dimen>
+    <dimen name="team_textview_top_padding">10dp</dimen>
 </resources>

@@ -29,7 +29,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:paddingBottom="@dimen/text_views_bottom_padding"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/team_textview_top_padding"
                 android:text="@string/team_a"
                 android:textColor="@color/colorDarkerGrey"
                 android:textSize="@dimen/team_name_text_size" />
@@ -48,7 +48,7 @@
             <Button
                 android:id="@+id/teamAOneRunButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamAIncrementOneRun"
@@ -57,7 +57,7 @@
             <Button
                 android:id="@+id/teamAFourRunsButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamAIncrementFourRuns"
@@ -66,7 +66,7 @@
             <Button
                 android:id="@+id/teamASixRunsButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamAIncrementSixRuns"
@@ -75,7 +75,7 @@
             <Button
                 android:id="@+id/teamAWicketDownButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamAWicketDown"
@@ -100,7 +100,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:paddingBottom="@dimen/text_views_bottom_padding"
-                android:paddingTop="10dp"
+                android:paddingTop="@dimen/team_textview_top_padding"
                 android:text="@string/team_b"
                 android:textColor="@color/colorDarkerGrey"
                 android:textSize="@dimen/team_name_text_size" />
@@ -119,7 +119,7 @@
             <Button
                 android:id="@+id/teamBOneRunButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamBIncrementOneRun"
@@ -128,7 +128,7 @@
             <Button
                 android:id="@+id/teamBFourRunsButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamBIncrementFourRuns"
@@ -137,7 +137,7 @@
             <Button
                 android:id="@+id/teamBSixRunsButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamBIncrementSixRuns"
@@ -146,7 +146,7 @@
             <Button
                 android:id="@+id/teamBWicketDownButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="@dimen/button_height"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
                 android:onClick="teamBWicketDown"
