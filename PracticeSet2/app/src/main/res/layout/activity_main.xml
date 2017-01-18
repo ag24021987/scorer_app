@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cricket1" />
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context="com.example.agupt23.practiceset2.MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/text_views_bottom_padding"
+                android:paddingTop="10dp"
+                android:text="@string/team_a"
+                android:textColor="@color/colorDarkerGrey"
+                android:textSize="@dimen/team_name_text_size" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/text_views_bottom_padding"
+                android:text="@string/initial_score"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/teamAOneRunButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamAIncrementOneRun"
+                android:text="@string/add_one_run" />
+
+            <Button
+                android:id="@+id/teamAFourRunsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamAIncrementFourRuns"
+                android:text="@string/add_four_runs" />
+
+            <Button
+                android:id="@+id/teamASixRunsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamAIncrementSixRuns"
+                android:text="@string/add_six_runs" />
+
+            <Button
+                android:id="@+id/teamAWicketDownButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamAWicketDown"
+                android:text="@string/wicket_down" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/straight_line_width"
+            android:layout_height="@dimen/straight_line_height"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/text_views_bottom_padding"
+                android:paddingTop="10dp"
+                android:text="@string/team_b"
+                android:textColor="@color/colorDarkerGrey"
+                android:textSize="@dimen/team_name_text_size" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/text_views_bottom_padding"
+                android:text="@string/initial_score"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/teamBOneRunButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamBIncrementOneRun"
+                android:text="@string/add_one_run" />
+
+            <Button
+                android:id="@+id/teamBFourRunsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamBIncrementFourRuns"
+                android:text="@string/add_four_runs" />
+
+            <Button
+                android:id="@+id/teamBSixRunsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamBIncrementSixRuns"
+                android:text="@string/add_six_runs" />
+
+            <Button
+                android:id="@+id/teamBWicketDownButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="teamBWicketDown"
+                android:text="@string/wicket_down" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/end_match_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/end_reset_margin"
+        android:onClick="endMatch"
+        android:text="@string/end_match" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/end_reset_margin"
+        android:onClick="resetClicked"
+        android:text="@string/reset" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cricket Scorer</string>
+    <string name="add_one_run">+1 RUN</string>
+    <string name="add_four_runs">+4 RUNS</string>
+    <string name="add_six_runs">+6 RUNS</string>
+    <string name="wicket_down">WICKET DOWN</string>
+    <string name="end_match">END MATCH</string>
+    <string name="reset">RESET</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="initial_score">0/0</string>
+</resources>
