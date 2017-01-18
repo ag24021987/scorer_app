@@ -14,11 +14,27 @@ public class MainActivity extends AppCompatActivity {
     int wickets_team_a = 0;
     int score_team_b = 0;
     int wickets_team_b = 0;
+    Button wicketButtonTeamA;
+    Button oneRunButtonTeamA;
+    Button fourRunsButtonTeamA;
+    Button sixRunsButtonTeamA;
+    Button wicketButtonTeamB;
+    Button oneRunButtonTeamB;
+    Button fourRunsButtonTeamB;
+    Button sixRunsButtonTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        wicketButtonTeamA = (Button) findViewById(R.id.teamAWicketDownButton);
+        oneRunButtonTeamA = (Button) findViewById(R.id.teamAOneRunButton);
+        fourRunsButtonTeamA = (Button) findViewById(R.id.teamAFourRunsButton);
+        sixRunsButtonTeamA = (Button) findViewById(R.id.teamASixRunsButton);
+        wicketButtonTeamB = (Button) findViewById(R.id.teamBWicketDownButton);
+        oneRunButtonTeamB = (Button) findViewById(R.id.teamBOneRunButton);
+        fourRunsButtonTeamB = (Button) findViewById(R.id.teamBFourRunsButton);
+        sixRunsButtonTeamB = (Button) findViewById(R.id.teamBSixRunsButton);
         displayForTeamA();
     }
 
@@ -52,13 +68,9 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA();
 
         if(wickets_team_a == 10) {
-            Button wicketButtonTeamA = (Button) findViewById(R.id.teamAWicketDownButton);
             wicketButtonTeamA.setEnabled(false);
-            Button oneRunButtonTeamA = (Button) findViewById(R.id.teamAOneRunButton);
             oneRunButtonTeamA.setEnabled(false);
-            Button fourRunsButtonTeamA = (Button) findViewById(R.id.teamAFourRunsButton);
             fourRunsButtonTeamA.setEnabled(false);
-            Button sixRunsButtonTeamA = (Button) findViewById(R.id.teamASixRunsButton);
             sixRunsButtonTeamA.setEnabled(false);
             showToast("Oh! Team A All Out");
         }
@@ -84,13 +96,9 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB();
 
         if(wickets_team_b == 10) {
-            Button wicketButtonTeamB = (Button) findViewById(R.id.teamBWicketDownButton);
             wicketButtonTeamB.setEnabled(false);
-            Button oneRunButtonTeamB = (Button) findViewById(R.id.teamBOneRunButton);
             oneRunButtonTeamB.setEnabled(false);
-            Button fourRunsButtonTeamB = (Button) findViewById(R.id.teamBFourRunsButton);
             fourRunsButtonTeamB.setEnabled(false);
-            Button sixRunsButtonTeamB = (Button) findViewById(R.id.teamBSixRunsButton);
             sixRunsButtonTeamB.setEnabled(false);
             showToast("Oh! Team B All Out");
         }
@@ -103,21 +111,13 @@ public class MainActivity extends AppCompatActivity {
         wickets_team_a = 0;
         displayForTeamB();
         displayForTeamA();
-        Button wicketButtonTeamA = (Button) findViewById(R.id.teamAWicketDownButton);
         wicketButtonTeamA.setEnabled(true);
-        Button oneRunButtonTeamA = (Button) findViewById(R.id.teamAOneRunButton);
         oneRunButtonTeamA.setEnabled(true);
-        Button fourRunsButtonTeamA = (Button) findViewById(R.id.teamAFourRunsButton);
         fourRunsButtonTeamA.setEnabled(true);
-        Button sixRunsButtonTeamA = (Button) findViewById(R.id.teamASixRunsButton);
         sixRunsButtonTeamA.setEnabled(true);
-        Button wicketButtonTeamB = (Button) findViewById(R.id.teamBWicketDownButton);
         wicketButtonTeamB.setEnabled(true);
-        Button oneRunButtonTeamB = (Button) findViewById(R.id.teamBOneRunButton);
         oneRunButtonTeamB.setEnabled(true);
-        Button fourRunsButtonTeamB = (Button) findViewById(R.id.teamBFourRunsButton);
         fourRunsButtonTeamB.setEnabled(true);
-        Button sixRunsButtonTeamB = (Button) findViewById(R.id.teamBSixRunsButton);
         sixRunsButtonTeamB.setEnabled(true);
     }
 
